@@ -29,6 +29,7 @@ class Stack {
 private:
 
     std::vector<T> elems;      // elements
+    std::vector<T> elems2;      // elements
 
 public:
     Stack() = default;

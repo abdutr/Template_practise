@@ -1,6 +1,6 @@
 #pragma once
 #include <array>
-template <typename T>
+template <typename T=double>
 constexpr T pi{ static_cast<T>(3.14235234655125436743) };
 
 template<typename T>

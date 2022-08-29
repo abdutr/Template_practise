@@ -142,12 +142,14 @@ auto main()->int {
 	auto sum6 = even_better_accumulate<int>(numbers.begin(), numbers.end());
 
 	auto random_access_begin_it{ numbers.begin() };
-	//Advance(random_access_begin_it, 3);
+	Advance(random_access_begin_it, 3);
 
 	std::set<int> int_set{ 1,2,3,4,5 };
 	auto forward_access_begin_it{ int_set.begin() };
-	//Advance(forward_access_begin_it,2);
+	Advance(forward_access_begin_it,2);
 
+	random_access_begin_it = numbers.begin();
+	forward_access_begin_it =  int_set.begin() ;
 	Advance_cpp17(random_access_begin_it, 3);
 	Advance_cpp17(forward_access_begin_it, 3);
 	
