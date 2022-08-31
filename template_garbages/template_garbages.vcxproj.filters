@@ -68,5 +68,11 @@
     <ClInclude Include="advance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="is_default_construbtible.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="is_default_constructible2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

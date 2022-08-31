@@ -18,6 +18,8 @@
 #include "enable_if_func.h"
 #include "accumulate.h"
 #include "advance.h"
+#include "is_default_construbtible.h"
+#include "is_default_constructible2.h"
 
 extern char const s03[] = "hi";    // external linkage
 char const s11[] = "hi2";           // internal linkage
@@ -153,6 +155,9 @@ auto main()->int {
 	Advance_cpp17(random_access_begin_it, 3);
 	Advance_cpp17(forward_access_begin_it, 3);
 	
-
+	constexpr auto is_int_def_constructable = IsDefaultConstructible<int>::value;
+	constexpr auto is_int_ref_def_constructable = IsDefaultConstructible<int&>::value;
+	constexpr auto is_int_def_constructable2 = IsDefaultConstructible2<int>::value;
+	constexpr auto is_int_ref_def_constructable2 = IsDefaultConstructible2<int&>::value;
 	std::ignore = x;
 }
