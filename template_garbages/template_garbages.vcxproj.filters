@@ -74,5 +74,11 @@
     <ClInclude Include="is_default_constructible2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="is_convertible.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="has_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

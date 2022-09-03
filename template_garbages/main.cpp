@@ -20,6 +20,7 @@
 #include "advance.h"
 #include "is_default_construbtible.h"
 #include "is_default_constructible2.h"
+#include "has_type.h"
 
 extern char const s03[] = "hi";    // external linkage
 char const s11[] = "hi2";           // internal linkage
@@ -159,5 +160,9 @@ auto main()->int {
 	constexpr auto is_int_ref_def_constructable = IsDefaultConstructible<int&>::value;
 	constexpr auto is_int_def_constructable2 = IsDefaultConstructible2<int>::value;
 	constexpr auto is_int_ref_def_constructable2 = IsDefaultConstructible2<int&>::value;
+
+	auto vector_of_char_has_size = HasSizeType<decltype(chars)>::value;
+	auto arr_of_int_has_size = HasSizeType<decltype(arr)>::value;
+
 	std::ignore = x;
 }

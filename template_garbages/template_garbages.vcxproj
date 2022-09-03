@@ -153,7 +153,9 @@
     <ClInclude Include="basic_experiments.h" />
     <ClInclude Include="bridge_pattern_polymorphy.h" />
     <ClInclude Include="enable_if_func.h" />
+    <ClInclude Include="has_type.h" />
     <ClInclude Include="invoke.h" />
+    <ClInclude Include="is_convertible.h" />
     <ClInclude Include="is_default_construbtible.h" />
     <ClInclude Include="is_default_constructible2.h" />
     <ClInclude Include="is_prime.h" />
