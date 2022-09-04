@@ -13,72 +13,96 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\crtp">
+      <UniqueIdentifier>{31e871fa-1538-4f9f-ae55-a091aa517922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\traits">
+      <UniqueIdentifier>{19b815bb-40a0-4757-ad5c-a73ae024639b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sfinae">
+      <UniqueIdentifier>{448aa370-56e8-45ec-af3f-0b0efa21ab93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\basics">
+      <UniqueIdentifier>{5d122df7-55d8-453d-9ff1-880c18dfa937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\metaprogramming">
+      <UniqueIdentifier>{14081969-947e-4519-a14a-7be85f793875}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="tree.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\basics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="max.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="crtp_object_counter.h">
+      <Filter>Header Files\crtp</Filter>
     </ClInclude>
-    <ClInclude Include="stack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="variadic.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="array_printer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="template_variables.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="stack2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="perfect_forwarding.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="is_prime_old.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="is_prime.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="basic_experiments.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="invoke.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="bridge_pattern_polymorphy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="enable_if_func.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="crtp_equality_comparable.h">
+      <Filter>Header Files\crtp</Filter>
     </ClInclude>
     <ClInclude Include="accumulate.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\traits</Filter>
     </ClInclude>
     <ClInclude Include="advance.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\sfinae</Filter>
     </ClInclude>
-    <ClInclude Include="is_default_construbtible.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="array_printer.h">
+      <Filter>Header Files\basics</Filter>
     </ClInclude>
-    <ClInclude Include="is_default_constructible2.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="basic_experiments.h">
+      <Filter>Header Files\basics</Filter>
     </ClInclude>
-    <ClInclude Include="is_convertible.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="bridge_pattern_polymorphy.h">
+      <Filter>Header Files\basics</Filter>
+    </ClInclude>
+    <ClInclude Include="enable_if_func.h">
+      <Filter>Header Files\sfinae</Filter>
     </ClInclude>
     <ClInclude Include="has_type.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="invoke.h">
+      <Filter>Header Files\sfinae</Filter>
+    </ClInclude>
+    <ClInclude Include="is_convertible.h">
+      <Filter>Header Files\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="is_default_construbtible.h">
+      <Filter>Header Files\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="is_default_constructible2.h">
+      <Filter>Header Files\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="is_no_throw_move_constructable.h">
+      <Filter>Header Files\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="is_prime.h">
+      <Filter>Header Files\metaprogramming</Filter>
+    </ClInclude>
+    <ClInclude Include="is_prime_old.h">
+      <Filter>Header Files\metaprogramming</Filter>
+    </ClInclude>
+    <ClInclude Include="max.h">
+      <Filter>Header Files\basics</Filter>
+    </ClInclude>
+    <ClInclude Include="perfect_forwarding.h">
+      <Filter>Header Files\basics</Filter>
+    </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>Header Files\basics</Filter>
+    </ClInclude>
+    <ClInclude Include="stack2.h">
+      <Filter>Header Files\basics</Filter>
+    </ClInclude>
+    <ClInclude Include="template_variables.h">
+      <Filter>Header Files\basics</Filter>
+    </ClInclude>
+    <ClInclude Include="variadic.h">
+      <Filter>Header Files\basics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

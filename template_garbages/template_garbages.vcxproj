@@ -152,12 +152,15 @@
     <ClInclude Include="array_printer.h" />
     <ClInclude Include="basic_experiments.h" />
     <ClInclude Include="bridge_pattern_polymorphy.h" />
+    <ClInclude Include="crtp_equality_comparable.h" />
+    <ClInclude Include="crtp_object_counter.h" />
     <ClInclude Include="enable_if_func.h" />
     <ClInclude Include="has_type.h" />
     <ClInclude Include="invoke.h" />
     <ClInclude Include="is_convertible.h" />
     <ClInclude Include="is_default_construbtible.h" />
     <ClInclude Include="is_default_constructible2.h" />
+    <ClInclude Include="is_no_throw_move_constructable.h" />
     <ClInclude Include="is_prime.h" />
     <ClInclude Include="is_prime_old.h" />
     <ClInclude Include="max.h" />

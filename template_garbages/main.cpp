@@ -21,6 +21,8 @@
 #include "is_default_construbtible.h"
 #include "is_default_constructible2.h"
 #include "has_type.h"
+#include "crtp_object_counter.h"
+#include "crtp_equality_comparable.h"
 
 extern char const s03[] = "hi";    // external linkage
 char const s11[] = "hi2";           // internal linkage
@@ -163,6 +165,31 @@ auto main()->int {
 
 	auto vector_of_char_has_size = HasSizeType<decltype(chars)>::value;
 	auto arr_of_int_has_size = HasSizeType<decltype(arr)>::value;
+
+	auto has_int_uint_has_less = HasLess_v<int, uint32_t>;
+	auto has_int_string_has_less = HasLess_v<int, std::string>;
+
+	auto is_int_contextual_bool = IsContextualBool<int>::value;
+	auto is_string_contextual_bool = IsContextualBool<std::string>::value;
+	auto is_init_test_contextual_bool = IsContextualBool<InitTest>::value;
+
+
+	// Crtp
+
+	auto crtp_my_string{ MyString<char>() };
+	MyString<char> crtp_my_string2;
+	MyString<char> crtp_my_string3;
+	MyString<int> crtp_my_string4;
+
+	auto mystring_char_count = MyString<char>::alive_object_count();
+	auto mystring_int_count = MyString<int>::alive_object_count();
+	auto mystring_uint16_count = MyString<uint16_t>::alive_object_count();
+
+	SimpleClass simp_cl{ 5 };
+	SimpleClass simp_cl2{ 2 };
+	bool are_simp_objects_not_equal{ simp_cl != simp_cl2 };
+	bool are_same_objects_not_equal{ simp_cl != simp_cl };
+
 
 	std::ignore = x;
 }

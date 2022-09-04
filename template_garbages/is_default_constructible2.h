@@ -16,6 +16,6 @@ public:
 };
 
 template<typename T>
-struct IsDefaultConstructible2 : IsDefaultConstructible<T>::type {
+struct IsDefaultConstructible2 : IsDefaultConstructibleHelper<T>::type {
 
 };
