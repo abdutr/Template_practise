@@ -154,6 +154,7 @@
     <ClInclude Include="bridge_pattern_polymorphy.h" />
     <ClInclude Include="crtp_equality_comparable.h" />
     <ClInclude Include="crtp_object_counter.h" />
+    <ClInclude Include="curious_mixin.h" />
     <ClInclude Include="enable_if_func.h" />
     <ClInclude Include="has_type.h" />
     <ClInclude Include="invoke.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="is_prime.h" />
     <ClInclude Include="is_prime_old.h" />
     <ClInclude Include="max.h" />
+    <ClInclude Include="mixins.h" />
     <ClInclude Include="perfect_forwarding.h" />
     <ClInclude Include="stack.h" />
     <ClInclude Include="stack2.h" />

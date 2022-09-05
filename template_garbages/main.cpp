@@ -23,6 +23,8 @@
 #include "has_type.h"
 #include "crtp_object_counter.h"
 #include "crtp_equality_comparable.h"
+#include "curious_mixin.h"
+#include "mixins.h"
 
 extern char const s03[] = "hi";    // external linkage
 char const s11[] = "hi2";           // internal linkage
@@ -190,6 +192,14 @@ auto main()->int {
 	bool are_simp_objects_not_equal{ simp_cl != simp_cl2 };
 	bool are_same_objects_not_equal{ simp_cl != simp_cl };
 
+	// Mixin Point inheriting Label and Color
+	Point<Label, Color> p(1, 2);
+	auto blue_val = p.blue;
+	auto point_label = p.label;
+
+	Point2<Label2, Color2> point2(3, 4);
+	auto blue_val2 = point2.blue;
+	auto point_label2 = point2.label;
 
 	std::ignore = x;
 }

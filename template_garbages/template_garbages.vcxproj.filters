@@ -104,5 +104,11 @@
     <ClInclude Include="variadic.h">
       <Filter>Header Files\basics</Filter>
     </ClInclude>
+    <ClInclude Include="curious_mixin.h">
+      <Filter>Header Files\crtp</Filter>
+    </ClInclude>
+    <ClInclude Include="mixins.h">
+      <Filter>Header Files\crtp</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
