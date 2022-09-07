@@ -110,5 +110,11 @@
     <ClInclude Include="mixins.h">
       <Filter>Header Files\crtp</Filter>
     </ClInclude>
+    <ClInclude Include="duration.h">
+      <Filter>Header Files\metaprogramming</Filter>
+    </ClInclude>
+    <ClInclude Include="sqrt_old.h">
+      <Filter>Header Files\metaprogramming</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

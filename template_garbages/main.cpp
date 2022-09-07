@@ -25,6 +25,8 @@
 #include "crtp_equality_comparable.h"
 #include "curious_mixin.h"
 #include "mixins.h"
+#include "duration.h"
+#include "sqrt_old.h"
 
 extern char const s03[] = "hi";    // external linkage
 char const s11[] = "hi2";           // internal linkage
@@ -200,6 +202,22 @@ auto main()->int {
 	Point2<Label2, Color2> point2(3, 4);
 	auto blue_val2 = point2.blue;
 	auto point_label2 = point2.label;
+
+	using ratio1 = Ratio<3, 5>;
+	using ratio2 = Ratio<2, 9>;
+	using sum_temp = RatioAdd<ratio1, ratio2>;
+	auto ratio_num = sum_temp::num;
+	auto ratio_denom = sum_temp::denom;
+
+	Duration<int, Ratio<3, 5>> D1{ 3 };
+	Duration<int, Ratio<2, 7>> D2{ 3 };
+	auto D3 = D1 + D2;
+	D3.print();
+
+	auto sqrt_of_5{ sqrt_v<5> } ;
+	auto sqrt_of_9{ sqrt_v<9> } ;
+	auto sqrt_of_16{ sqrt_v<16> } ;
+	auto sqrt_of_20{ sqrt_v<20> } ;
 
 	std::ignore = x;
 }
