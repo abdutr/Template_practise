@@ -39,6 +39,6 @@ public:
 	//template<typename T>
 	//requires std::is_convertible_v<T, Person2 >
 	Person2(Person const& p) {
-
+		name = p.name;
 	}
 };

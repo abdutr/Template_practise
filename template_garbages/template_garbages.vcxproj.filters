@@ -116,5 +116,8 @@
     <ClInclude Include="sqrt_old.h">
       <Filter>Header Files\metaprogramming</Filter>
     </ClInclude>
+    <ClInclude Include="template_template_vars.h">
+      <Filter>Header Files\basics</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,6 +1,8 @@
 #include <tuple>
 #include <set>
 #include <vector>
+#include <map>
+#include <unordered_map>
 
 #include "max.h"
 #include "stack.h"
@@ -27,6 +29,7 @@
 #include "mixins.h"
 #include "duration.h"
 #include "sqrt_old.h"
+#include "template_template_vars.h"
 
 extern char const s03[] = "hi";    // external linkage
 char const s11[] = "hi2";           // internal linkage
@@ -218,6 +221,11 @@ auto main()->int {
 	auto sqrt_of_9{ sqrt_v<9> } ;
 	auto sqrt_of_16{ sqrt_v<16> } ;
 	auto sqrt_of_20{ sqrt_v<20> } ;
+
+	std::map<std::string,std::string> map_val1{ {"Key1","Value1"},{"Key2","Value2"} };
+	std::map<std::string, std::vector<uint64_t>> map_val2{ {"Key1",numbers }, { "Key1",numbers }};
+	print_cont<std::map>(map_val1);
+	//print_cont<std::map>(map_val2); // Statis assert fails
 
 	std::ignore = x;
 }
