@@ -7,7 +7,7 @@ constexpr auto IsRandomAccessIterator = std::is_convertible_v<typename std::iter
 
 template <typename It, typename Dist,
 	typename = std::enable_if_t<!std::is_convertible_v<typename std::iterator_traits<It>::iterator_category, std::random_access_iterator_tag> > >
-	void Advance(It& it, Dist dist) {
+void Advance(It& it, Dist dist) {
 	for (Dist ctr = 0; ctr < dist; ctr++) {
 		++it;
 	}

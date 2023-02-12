@@ -35,3 +35,6 @@ template <>
 struct IsPrime_old<3> {
 	static constexpr  bool value = true;
 };
+
+template <unsigned d>
+constexpr bool IsPrime_old_v = IsPrime_old<d>::value;

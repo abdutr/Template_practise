@@ -4,7 +4,7 @@
 
 template<typename Callable, typename... Args>
 decltype(auto) call(Callable&& callable, Args&&... args) {
-	std::invoke(std::forward<Callable>(callable), std::forward<Args>(args)...);
+	return std::invoke(std::forward<Callable>(callable), std::forward<Args>(args)...);
 }
 
 

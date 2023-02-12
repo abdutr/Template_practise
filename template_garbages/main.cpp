@@ -41,7 +41,7 @@ auto main()->int {
 	auto sqr1{ square3(5) };
 	auto sqr2{ square4<10>() };
 
-	Stack<int> int_stack;
+	Stack int_stack = 5;
 	Stack<int> int_stack2{ 2 };
 	int_stack.push(3);
 	int_stack.push(4);
@@ -114,6 +114,7 @@ auto main()->int {
 	auto is5prime{ IsPrime_old<5>::value };
 	auto is3prime{ IsPrime_old<3>::value };
 	auto is16prime{ IsPrime_old<16>::value };
+	auto is18prime{ IsPrime_old_v<18> };
 
 	constexpr bool new_is9prime{ IsPrime(9) };
 	constexpr bool new_is13prime{ IsPrime(13) };
@@ -151,7 +152,7 @@ auto main()->int {
 	auto sum3 = better_accumulate(chars.begin(), chars.end());
 	auto sum4 = better_accumulate(numbers.begin(), numbers.end());
 	auto sum5 = even_better_accumulate<char>(chars.begin(), chars.end());
-	auto sum6 = even_better_accumulate<int>(numbers.begin(), numbers.end());
+	auto sum6 = even_better_accumulate<uint64_t>(numbers.begin(), numbers.end());
 
 	auto random_access_begin_it{ numbers.begin() };
 	Advance(random_access_begin_it, 3);
@@ -166,6 +167,7 @@ auto main()->int {
 	Advance_cpp17(forward_access_begin_it, 3);
 	
 	constexpr auto is_int_def_constructable = IsDefaultConstructible<int>::value;
+	constexpr auto is_int_def_constructablee = IsDefaultConstructible_v<int>;
 	constexpr auto is_int_ref_def_constructable = IsDefaultConstructible<int&>::value;
 	constexpr auto is_int_def_constructable2 = IsDefaultConstructible2<int>::value;
 	constexpr auto is_int_ref_def_constructable2 = IsDefaultConstructible2<int&>::value;

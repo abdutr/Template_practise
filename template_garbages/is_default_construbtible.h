@@ -10,3 +10,6 @@ template<typename T>
 struct IsDefaultConstructible<T,std::void_t<decltype(T())>> : std::true_type {
 
 };
+
+template<typename T>
+constexpr auto IsDefaultConstructible_v = IsDefaultConstructible<T>::value;

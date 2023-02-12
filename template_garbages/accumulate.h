@@ -37,11 +37,13 @@ struct AccumulatorTraits<char> {
 	using AccumulationType = int;
 };
 
+template <typename T>
+using AccumulatorTraits_t = typename AccumulatorTraits<T>::AccumulationType;
 
 template<typename it>
 auto better_accumulate(it begin, it  end) {
 	using it_value_type = std::iterator_traits<it>::value_type;
-	typename AccumulatorTraits<it_value_type>::AccumulationType total{};
+	AccumulatorTraits_t<it_value_type> total{};
 	while (begin != end) {
 		total += *begin;
 		++begin;
